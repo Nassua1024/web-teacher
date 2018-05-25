@@ -1,0 +1,208 @@
+
+.mtask-container {
+	width: 100%;
+	min-height: 100%;
+	background: #F1F5F8;
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.time, .homework {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 110px;
+		box-sizing: border-box;
+		padding-left: 44px;
+		background: #fff;
+		align-items: center;
+		i {
+			width: 30px;
+			height: 30px;
+			margin-right: 24px;
+		}
+	}
+	.time {
+		margin-bottom: 14px;
+		border-bottom: 2px solid #DDD;
+		i {
+			background: url('../../assets/images/time-icon.png') no-repeat left top;
+			background-size: 100%;
+		}
+	}
+	.homework i {
+		background: url('../../assets/images/task-icon.png') no-repeat left top;
+		background-size: 100%;
+	}
+	.select-all {
+		position: absolute;
+		right: 20px;
+		top: 0;
+		width: 150px;
+		height: 100%;
+		text-align:  center;
+		line-height: 110px;
+		font-size: 28px;
+		color: #6CA5FF;
+		letter-spacing: 3px;
+	}
+	.stud-wrap {
+		box-sizing: border-box;
+		padding-left: 30px;
+		background: #FFF;
+	}
+	.stud-list {
+		display: flex;
+		height: 150px;
+		border-bottom: 2px solid #DDD;
+		div {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			line-height: 150px;
+			img {
+				display: inline-block;
+				width: 90px;
+				height: 90px;
+				margin-right: 30px;
+				border-radius: 50%;
+				vertical-align: middle;
+			}
+			a {
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				display: block;
+				width: 154px;
+				height: 48px;
+				margin-top: -25px;
+				line-height: 50px;
+				text-align: center;
+			}
+			.urge {
+				border: 2px solid #6CA5FF;
+				border-radius: 24px;
+				font-size: 24px;
+				color: #6CA5FF;
+				letter-spacing: 3px;
+			}
+			.urged {
+				border: 2px solid #DDD;
+				border-radius: 24px;
+				font-size: 24px;
+				color: #DDD;
+				letter-spacing: 3px;
+			}
+			.not-finish {
+				font-size: 28px;
+				color: #333;
+			}
+			.not-correct {
+				background: url('../../assets/images/left.png') no-repeat right center;
+				background-size: 10px 18px;
+				font-size: 28px;
+				color: #333;
+			}
+			.correct {
+				font-size: 28px;
+				color: #DDD;
+			}
+		}
+		.select-item {
+			position: relative;
+			height: 100%;
+			width: 10%;
+			i {
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				width: 30px;
+				height: 30px;
+				margin-top: -10px;
+				border: 2px solid #59A7FF;
+				border-radius: 50%;
+			}
+			i.active {
+				background: #59A7FF url('../../assets/images/selected.png') no-repeat center center;
+				background-size: 14px 10px;
+			}
+		}
+		.selected {
+			width: 90% !important;
+		}
+	}
+	.stud-list:nth-child(1) {
+		border-top: 2px solid #DDD;
+	}
+	.urge-wrap {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.6);
+		.urge-content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 550px;
+			height: 420px;
+			margin: auto;
+			background: #FFF;
+			border-radius: 20px;
+			img {
+				display: block;
+				width: 132px;
+				height: 132px;
+				margin: 90px auto 60px;
+			}
+			p {
+				text-align: center;
+				font-size: 32px;
+				color: #333;
+			}
+		}
+	}
+	.select-btn {
+		position: fixed;
+		left: 0;
+		bottom: 80px;
+		display: flex;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 40px;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			width: 296px;
+			height: 122px;
+			border-radius: 40px;
+			text-align: center;
+			line-height: 80px;
+			font-size: 28px;
+			letter-spacing: 3px;
+		}
+		a:first-child {
+			background: url('../../assets/images/quxiao_normal.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:first-child:active {
+			background: url('../../assets/images/quxiao_pressed.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:last-child {
+			background: url('../../assets/images/queren_normal.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:last-child:active {
+			background: url('../../assets/images/queren_pressed.png') no-repeat center center;
+			background-size: 100%;
+		}
+		.am-button::before {
+			border: none;
+		}
+	}
+}

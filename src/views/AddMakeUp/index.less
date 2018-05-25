@@ -1,0 +1,136 @@
+.makeup-container {
+	height: 100%;
+	background-color: #fff;
+	.am-list-content,
+	.am-list-extra {
+		font-size: 28px !important;
+	}	
+	.am-list-extra {
+		font-size: 24px !important;
+		color: #999;
+	}
+
+	.st-list {
+		overflow: auto;
+    	padding-top: 100px;
+    	padding-left: 30px;
+	}
+
+	.st-groupdiv{
+		float: left;
+		position: relative;
+		width: 120px;
+		margin:0 40px 0 18px;
+		margin-bottom: 30px;
+		p{
+			text-align: center;
+			margin:10px 0 0;
+			color: #666;
+			font-size:24px;
+
+		}
+	}
+	.st-div {
+			float: left;
+			position: relative;
+			width: 120px;
+			height: 120px;
+			margin-bottom: 18px;
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+			div {
+				position: absolute;
+				top:0;
+				left:0;
+				background: rgba(0,0,0,.3);
+				color: #fff;
+				text-align: center;
+				line-height: 120px;
+				width: 120px;
+				height: 120px;
+				font-size: 24px;
+				border-radius: 60%;
+				display: block;
+			}
+			&.que-q > div {
+				display: block;
+				position: absolute;
+			    left: 0;
+			    top: 0;
+			    width: 100%;
+			    height: 100%;
+			    line-height: 150px;
+			    z-index: 99;
+			    background: rgba(0, 0, 0, .3);
+			    color: rgba(255, 255, 255, .8);
+			    text-align: center;
+			    vertical-align: middle;
+			    font-size: 36px;
+			    font-weight: normal;
+			}
+			i {
+				position: absolute;
+				right: -6px;
+				top: -6px;
+				display: block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				 background: url('../../assets/images/btn_shanchu.png') no-repeat center;
+	 			 background-size: 28px 28px; 
+				
+			}
+	}
+	.add-st {
+		border: none;
+	}
+
+	.plus.icon {
+	  position: absolute;
+	  width: 120px;
+	  height: 120px;
+	  border-radius: 60%;
+	  top:0px;
+	  left: 0px;
+	  background: url('../../assets/images/btn_tianjiaxueyuan.png') no-repeat center;
+	  background-size: 100%; 
+	}
+
+	.ButtonGroup{
+		position: absolute;
+		text-align: center;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 99;
+		background: #fff;
+		p {
+			font-size: 26px;
+			color: #666;
+			text-align: center;
+		}
+		a{
+			width:640px;
+			height:120px; 
+			// border-radius: 48px ;
+			border:none;
+			color: #fff;
+			margin-left:55px;
+			background: url('../../assets/images/btn_bg_normal.png') no-repeat center;
+			background-size: 100%;
+			&::before{
+				border:none;
+			}
+			&:active{
+				background: url('../../assets/images/btn_bg_pressed.png') no-repeat center ;
+				background-size: 100% 100% ;
+			}
+		}
+	}
+}

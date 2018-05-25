@@ -1,0 +1,346 @@
+.ctask-container {
+	.task-list {
+		margin-bottom: 30px;
+	}
+	.am-list-item .am-list-thumb:first-child {
+		margin-right: 16px;
+	}
+	.am-list-item .am-list-line .am-list-content {
+		white-space: normal;
+		word-wrap: break-word;
+	}
+	.last-time-t {
+		border-radius: 8px;
+		overflow: hidden;	
+	}
+	.task-content {
+		// background: #fff;
+		.am-list {
+			margin-bottom: 20px;
+			border-radius: 8px;
+			overflow: hidden;
+			.am-list-body {
+				&::before,
+				&::after {
+					background-color: #fff;
+				}
+			}
+			.am-checkbox-inner {
+				width: 36px;
+				height: 36px;
+				border-color: #6CA5FF;
+				&::after {
+					top: 4px;
+					right: 10px;
+					height: 18px;
+				}
+			}
+			.am-checkbox-checked .am-checkbox-inner {
+				border-color: #6CA5FF;
+    			background: #6CA5FF;
+			}
+		}
+		.am-list-header {
+			font-size: 28px;
+			color: #333;
+			background-color: #fff;
+			> div {
+				position: relative;
+				padding-left: 16px;
+				font-size: 28px;
+				font-weight: bolder;
+			}
+			span {
+				content: '';
+				position: absolute;
+				background: #f4b861;
+				height: 24px;
+				width: 6px;
+				left: 0;
+				top: 2px;
+				border-radius: 4px;
+			}
+		}
+		.am-list-content {
+			font-size: 24px;
+			color: #999;
+		}
+	}
+
+	.auto-task {
+		margin-top: 30px;
+		padding-bottom: 20px;
+		background: #fff;
+		border-radius: 8px;
+		.auto-title1 {
+			position: relative;
+		    padding-left: 0.16rem;
+		    font-size: 0.28rem;
+		    font-weight: bolder;
+		    padding: 25px 46px;
+		    span {
+		    	content: '';
+			    position: absolute;
+			    background: #f4b861;
+			    height: 0.24rem;
+			    width: 0.06rem;
+			    left: 30px;
+			    top: 30px;
+			    border-radius: 0.04rem;
+		    }
+		}
+		.ac-check {
+			position: relative;
+			.edit-td {
+				position: absolute;
+				font-size: 22px;
+				color: #6CA5FF;
+				background-color: #F0F6FF;
+				padding: 4px 16px;
+				border-radius: 4px;
+				right: 0;
+				bottom: 8px;
+				z-index: 20;
+			}
+			.am-list-content {
+				position: relative;
+			}
+			span {
+				word-wrap: break-word; 
+				word-break: break-all;
+			}
+		}
+		.am-checkbox-inner {
+			width: 0.36rem;
+		    height: 0.36rem;
+		    border-color: #6CA5FF;
+		    &::after {
+		    	top: 0.04rem;
+			    right: 0.1rem;
+			    height: 0.18rem;
+		    }
+		}
+		.am-checkbox-checked .am-checkbox-inner {
+			border-color: #6CA5FF;
+    		background: #6CA5FF;
+		}
+		.am-list-content {
+			font-size: 0.24rem;
+    		color: #999;	
+		}
+		.addatuo {
+			width: 300px;
+			height: 50px;
+			line-height: 50px;
+			margin: 0 auto;
+			text-align: center;
+			color: #6CA5FF;
+			border-radius: 8px;
+			border: 2px solid #6CA5FF;
+			font-size: 24px;
+		}
+		.am-list-body {
+			&:before, &:after {
+				background: #fff;
+			}
+		}
+		.auto-title {
+			margin-top: 0;
+			font-size: 28px;
+			color: #444;
+			font-weight: normal;
+		}
+		.auto-content {
+			padding: 20x;
+			.am-flexbox-item {
+				position: relative;
+				text-align: center;
+				padding: 16px 0;
+				margin-left: 0;
+				//margin-right: 20px;
+				background: #efefef;
+				border-top: 2px solid #ddd;
+				border-right: 2px solid #ddd;
+				color: #666;
+				&:first-child {
+					border-left: 2px solid #ddd;
+				}
+				&:last-child {
+					margin-right: 0;
+					border-right: 0;
+					border-right: 2px solid #ddd;
+				}
+				&.active {
+					color: #bd4d48;
+					//border-bottom: 2px solid #bd4d48;
+					&:after {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						content: "";
+						width: 100%;
+						height: 2px;
+						background: #bd4d48;
+					}
+				}
+			} 
+			textarea {
+				width: 100%;
+				height: 160px;
+				border: 1px solid #ccc;
+				border-top: 0;
+				//border-radius: 6px;
+				//margin-top: 30px;
+				padding: 16px;
+				resize: none;
+				color: #888;
+			}
+		}
+	}
+	
+	.forss {
+		margin-top: 30px;
+	}
+
+	.primary {
+		margin: 60px auto 0;
+		width: 296px;
+		height: 122px;
+		line-height: 98px;
+		font-size: 32px;
+		color: #fff;
+		text-align: center;
+		background-image: url('../../assets/images/btn_bg_normal280.png');
+		background-size: cover;
+		&:hover {
+			background-image: url('../../assets/images/btn_bg_pressed280.png');	
+		}
+	}
+	.last-time-t {
+		.am-list-content {
+			font-size: 28px;
+		}
+		.am-list-extra {
+			font-size: 24px;
+		}
+		.am-list-arrow {
+			width: 26px;
+			height: 26px;
+		}
+	}
+}
+
+.auto-tip {
+	// position: relative;
+	width: 650px !important;
+	height: 556px;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -325px;
+	.close-modal2 {
+		position: absolute;
+		width: 116px;
+		height: 116px;
+		top: -58px;
+		right: -58px;
+		border-bottom-left-radius: 50%;
+		background-color: #F0F6FF;
+		span {
+			position: absolute;
+			left: 26px;
+			bottom: 12px;
+			font-size: 36px;
+			font-weight: normal;
+			color: #99bdf9;
+		}
+	}
+	p {
+		color: #333;
+		font-size: 32px;
+		text-align: center;
+		margin-top: 0;
+	}
+	.check-radio {
+		display: flex;
+		padding: 0 20px;
+		> div {
+			position: relative;
+			flex: 1;
+			font-size: 28px;
+			color: #333;
+			label {
+				input {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					z-index: 2;
+					opacity: 0;
+					left: 0;
+					top: 0;
+				}
+				span {
+					position: absolute;
+					display: block;
+					width: 28px;
+					height: 28px;
+					border: 1PX solid #6CA5FF;
+					border-radius: 50%;
+					top: 4px;
+					&.active::after {
+						content: '';
+						position: absolute;
+						width: 16px;
+						height: 16px;
+						background-color: #6CA5FF;
+						border-radius: 50%;
+						left: 6px;
+						top: 6px;
+					}
+				}
+			}
+			.txtf {
+				padding-left: 20px;
+			}
+		}
+	}
+	.autotxt {
+		margin: 40px 0;
+		width: 590px;
+		border: 0;
+		border-radius: 6px;
+		margin-top: 30px;
+		padding: 12px;
+		resize: none;
+		outline: none;
+		-webkit-appearance: none;
+		background: #F8FAFC;
+		font-size: 24px;
+		color: #666;
+		line-height: 36px;
+	}
+	.autotxt::-webkit-input-placeholder {
+		color: #ccc;	
+	}
+	.autotxt::-moz-placeholder {
+		color: #ccc;
+	}
+	.autotxt::-ms-input-placeholder {
+		color: #ccc;
+	}
+	.am-button {
+		margin: 0 auto;
+		width: 230px;
+		background: #6CA5FF;
+		border-radius: 32px;
+		font-size: 28px;
+		height: 64px;
+		line-height: 64px;
+		&::before {
+			border: 0 !important;
+		}
+	}
+}
+.am-modal-wrap {
+	position: absolute;
+}

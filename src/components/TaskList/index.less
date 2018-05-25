@@ -1,0 +1,175 @@
+.taskls-container {
+	padding: 10px 20px 20px;
+	margin-bottom: 20px;
+	h3, p {
+		margin: 0;
+		padding: 0;
+	}
+	.task-del {
+		padding: 28px 20px;
+		background: #fff;
+		border-radius: 6px;
+		margin-bottom: 30px;
+		.type-name {
+			display: flex;
+			height: 52px;
+			align-items: center;
+			i {
+				width: 6px;
+				height: 20px;
+				margin-right: 10px;
+				background: #FEB64D;
+				border-radius: 3px;
+			}
+			h3 {
+				font-size: 28px;
+				color: #333;
+			}
+		}
+		.course-wrap {
+			margin-top: 28px;
+			p {
+				padding-bottom: 10px;
+				font-size: 24px;
+				color: #666;
+			}
+			.audio {
+				position: relative;
+				margin: 10px 0;
+				line-height: 65px;
+				text-indent: 25px;
+				font-size: 26px;
+				color: #6CA5FF;
+				i {
+					position: absolute;
+					right: 26px;
+					top: 50%;
+					display: block;
+					width: 22px;
+					height: 34px;
+					margin-top: -17px;
+					background: url('../../assets/images/audio-icon.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+				i.active {
+					background: url('../../assets/images/audio-play.gif') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+			.audio1 {
+				width: 200px;
+				background: url('../../assets/images/audio200.png') no-repeat center center;
+				background-size: 100% 100%;
+				.audio-active {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url('../../assets/images/audio200-active.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+			.audio2 {
+				width: 260px;
+				background: url('../../assets/images/audio260.png') no-repeat center center;
+				background-size: 100% 100%;
+				.audio-active {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url('../../assets/images/audio260-active.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+			.audio3 {
+				width: 320px;
+				background: url('../../assets/images/audio320.png') no-repeat center center;
+				background-size: 100% 100%;
+				.audio-active {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url('../../assets/images/audio320-active.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+			.audio4 {
+				width: 380px;
+				background: url('../../assets/images/audio380.png') no-repeat center center;
+				background-size: 100% 100%;
+				.audio-active {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url('../../assets/images/audio380-active.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+			.audio5 {
+				width: 440px;
+				background: url('../../assets/images/audio440.png') no-repeat center center;
+				background-size: 100% 100%;
+				.audio-active {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url('../../assets/images/audio440-active.png') no-repeat center center;
+					background-size: 100% 100%;
+				}
+			}
+		}
+		.video, .img {
+			display: inline-block;
+			width: 210px;
+			height: 180px;
+			margin: 10px 0;
+			margin-left: 20px;
+		}
+		.video:nth-child(3n+1), .img:nth-child(3n+1) {
+			margin-left: 0;
+		} 
+		.video {
+			position: relative;
+			background: url('../../assets/images/video-bg.png') no-repeat center center;
+			background-size: 100% 100%;
+			i {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 80px;
+				height: 80px;
+				margin: auto;
+				background: url('../../assets/images/video-icon.png') no-repeat center center;
+				background-size: 100% 100%;
+			}
+		}
+	}
+	.video-wrap {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.6);
+		video {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			margin: auto;
+		}
+	}
+}

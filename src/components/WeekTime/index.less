@@ -1,0 +1,40 @@
+.week-time {
+	display: flex;
+	align-items: center;
+	background: #F8FAFC;
+	border-top: 2px solid #DBDADF;
+	> div {
+		flex: 1;
+		//height: 100%;
+		padding: 10px 0;
+		align-items: center;
+		text-align: center;
+		font-size: 24px;
+		color: #666;
+		&.weeknds {
+			color: #bd4d48;
+		}
+		&.current-day{
+			position: relative;
+			background: #6CA5FF;
+			color: #fff;
+			> div {
+				position: absolute;
+			    width: 100%;
+			    height: 20px;
+			    top: -18px;
+			    left: 0;
+			    background: #6CA5FF;
+			    border-top-left-radius: 10px;
+			    border-top-right-radius: 10px;
+			}
+		}
+		span {
+			display: block;
+			&.t-day {
+				font-size: 26px;
+				// font-weight: bolder;
+			}
+		}
+	}
+}

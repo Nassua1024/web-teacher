@@ -1,0 +1,95 @@
+
+.adjust-class {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 40px 0 0 40px;
+    background: #FFF;
+    h3 {
+        margin: 0;
+        font-size: 28px;
+    }
+    .select-wrap {
+        margin-top: 40px;
+        .am-list-item {
+            padding-left: 10px;
+            border-bottom: 1PX solid #DDD;
+        }
+        .am-list-extra {
+            font-size: 28px;
+            text-align: left;
+            flex-basis: 100%;
+        }
+        .am-list-arrow {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .tip {
+        position: absolute;
+        left: 0;
+        bottom: 250px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;  
+        font-size: 28px;
+        color: #333;
+        line-height: 1.5;      
+    }   
+    .btn {
+        position: absolute;
+        left: 0;
+        bottom: 80px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;
+        justify-content: space-between;
+        a {
+            display: block;
+            width: 296px;
+            height: 121px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 88px;
+            font-size: 30px;
+        }
+        a:first-child {
+			background: url('../../assets/images/quxiao_normal.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:first-child:active {
+			background: url('../../assets/images/quxiao_pressed.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:last-child {
+			background: url('../../assets/images/queren_normal.png') no-repeat center center;
+			background-size: 100%;
+		}
+		a:last-child:active {
+			background: url('../../assets/images/queren_pressed.png') no-repeat center center;
+			background-size: 100%;
+		}
+		.am-button::before {
+			border: none;
+		}
+    }
+    .old-time {
+        margin-top: 100px;
+        label {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p{
+            height: 90px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-bottom: 1px solid #DDD;
+            line-height: 90px;
+            font-size: 28px;
+            text-indent: 10px;
+        }
+    }
+}

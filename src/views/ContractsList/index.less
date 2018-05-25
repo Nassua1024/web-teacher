@@ -1,0 +1,66 @@
+.cl-container {
+	height: 100%;
+	background-color: #fff;
+	h2 {
+		padding-top: 40px;
+		text-align: center;
+		font-weight: normal;
+		font-size: 38px;
+		color: #333;
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+	.cl-list-content {
+		padding: 0 20px;
+		padding-bottom: 140px;
+		background: #fff;
+		.cl-content {
+			padding: 10px 20px;
+			border: 2px solid #ccc;
+			border-radius: 6px;
+			margin-bottom: 20px;
+			&.active {
+				background-color: #F0F6FF;
+			}
+			> div {
+				display: flex;
+				height: 44px;
+				line-height: 44px;
+				justify-content: space-between;
+			}
+		}
+	}
+	.ButtonGroup{
+		position: fixed;
+		left: 0;
+		bottom: 0;	
+		width: 100%;
+		background-color: #fff;
+		text-align: center;
+		a{
+			width:640px;
+			height:120px; 
+			// border-radius: 48px ;
+			border:none;
+			color: #fff;
+			margin-left:55px;
+			background: url('../../assets/images/btn_bg_normal.png') no-repeat center;
+			background-size: 100%;
+			&::before{
+				border:none;
+			}
+			&:active{
+				background: url('../../assets/images/btn_bg_pressed.png') no-repeat center ;
+				background-size: 100% 100% ;
+			}
+		}
+	}
+}
+
+.clist-content {
+	width: 600px !important;
+	.am-button {
+		color: #fff;
+		font-size: 28px !important;
+	}
+}
